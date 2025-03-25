@@ -2,13 +2,13 @@
 📌 Prerequisites
 ✅ Install Docker on your system.
 ✅ Ensure Docker is running.
-✅ Create an SQL initialization script (e.g., Rakshan_demo.sql) with database and table definitions.
+✅ Create an SQL initialization script (e.g., Panchika_demo.sql) with database and table definitions.
 📂 Project Directory Structure
 Ensure your project directory is organized as follows:
 
 project-directory/
 │── Dockerfile
-│── Rakshan_demo.sql
+│── Panchika_demo.sql
 This structure keeps all necessary files in one place for an efficient setup.
 
 🛠 Step 1: Create a Dockerfile
@@ -18,15 +18,15 @@ Create a Dockerfile in your project directory:
 FROM mysql:latest
 
 # 📂 Copy initialization script to the container
-COPY Rakshan_demo.sql /docker-entrypoint-initdb.d/
+COPY Panchika_demo.sql /docker-entrypoint-initdb.d/
 
 # 🔥 Expose MySQL port
 EXPOSE 3306
 📜 Step 2: Create an SQL Initialization Script
-Create a file named Rakshan_demo.sql in the same directory:
+Create a file named Panchika_demo.sql in the same directory:
 
-CREATE DATABASE Tarak;
-USE Tarak;
+CREATE DATABASE Panchika;
+USE Panchika;
 
 CREATE TABLE students (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -66,9 +66,9 @@ mysql -u root -p
 After logging into MySQL, check the available databases:
 
 SHOW DATABASES;
-🔄 Switch to the Tarak database:
+🔄 Switch to the Panchika database:
 
-USE Tarak;
+USE Panchika;
 📊 Query the students table:
 
 SELECT * FROM students;

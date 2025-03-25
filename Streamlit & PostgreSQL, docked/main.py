@@ -49,7 +49,7 @@ st.title("🚀 PostgreSQL Connection with Streamlit through Docker")
 
 DB_HOST = "my_postgres_container"
 DB_NAME = "testdb"
-DB_USER = "Rakshan"
+DB_USER = "Panchika"
 DB_PASSWORD = "secret"
 
 def fetch_data():

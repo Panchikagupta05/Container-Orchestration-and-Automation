@@ -89,13 +89,13 @@ docker build -t titanic-prediction .
 
 ### **3️⃣ Run the Docker Container**
 ```bash
-docker run -p 8501:8501 titanic-prediction
+docker run -p 8301:8301 titanic-prediction
 ```
 
 ### **4️⃣ Access the Application**
 Open your browser and navigate to:
 ```
-http://localhost:8501
+http://localhost:8301
 ```
 
 ---

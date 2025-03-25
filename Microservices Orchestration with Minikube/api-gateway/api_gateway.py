@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-BACKEND_SERVICE_URL = os.getenv('BACKEND_SERVICE_URL', 'http://backend-service:5000')
+BACKEND_SERVICE_URL = os.getenv('BACKEND_SERVICE_URL', 'http://backend-service:6000')
 
 @app.route('/')
 def hello():

@@ -1,5 +1,5 @@
-CREATE DATABASE Rakshan;
-USE Rakshan;
+CREATE DATABASE Panchika;
+USE Panchika;
 
 CREATE TABLE students (
     id INT AUTO_INCREMENT PRIMARY KEY,

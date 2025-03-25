@@ -32,7 +32,7 @@ This network allows PostgreSQL and the Streamlit app to communicate.
 
 ### Step 3: Run the PostgreSQL Container
 ```sh
-docker run --name my_postgres_container --network my_postgres_network -e POSTGRES_USER=Rakshan -e POSTGRES_PASSWORD=secret -e POSTGRES_DB=testdb -p 5432:5432 -d postgres
+docker run --name my_postgres_container --network my_postgres_network -e POSTGRES_USER=Panchika -e POSTGRES_PASSWORD=secret -e POSTGRES_DB=testdb -p 5432:5432 -d postgres
 ```
 This starts a PostgreSQL container with authentication settings.
 
@@ -41,7 +41,7 @@ This starts a PostgreSQL container with authentication settings.
 ## 📊 Creating and Populating the Database
 ### Step 4: Access PostgreSQL
 ```sh
-docker exec -it my_postgres_container psql -U Rakshan -d testdb
+docker exec -it my_postgres_container psql -U Panchika -d testdb
 ```
 
 ### Step 5: Create the `passengers` Table
@@ -92,7 +92,7 @@ docker build -t streamlit_app .
 
 ### Step 9: Run the Streamlit Container
 ```sh
-docker run --name my_streamlit_container --network my_postgres_network -p 8501:8501 -d streamlit_app
+docker run --name my_streamlit_container --network my_postgres_network -p 8401:8401 -d streamlit_app
 ```
 This ensures that the Streamlit app can communicate with PostgreSQL.
 
@@ -100,7 +100,7 @@ This ensures that the Streamlit app can communicate with PostgreSQL.
 
 ## 🔗 Access the Application
 Open a browser and navigate to:
-👉 **[http://localhost:8501](http://localhost:8501)**
+👉 **[http://localhost:8401](http://localhost:8401)**
 
 You should see the list of passengers displayed in the app.
 
@@ -110,7 +110,7 @@ You should see the list of passengers displayed in the app.
 ✅ PostgreSQL container stores passenger data.  
 ✅ Streamlit container fetches and displays data from PostgreSQL.  
 ✅ Both containers communicate over **my_postgres_network**.  
-✅ Application accessible at **http://localhost:8501**.  
+✅ Application accessible at **http://localhost:8401**.  
 
 This project provides a **containerized solution** for data visualization using **Streamlit and PostgreSQL**. 🚀
 
