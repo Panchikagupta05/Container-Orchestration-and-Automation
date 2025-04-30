@@ -1,5 +1,3 @@
-
-
 # 🐳 My Docker Space  
 **Author:** [Panchikagupta05](https://github.com/Panchikagupta05)
 **Description:** A collection of Docker-based projects and experiments demonstrating containerization concepts, machine learning deployments, database integrations, networking, and cloud operations.
@@ -108,4 +106,3 @@ This repository is a personal initiative to explore Docker and its ecosystem in 
 ---
 
 **Happy Containerizing!** 🐳
-```
