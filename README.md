@@ -1,5 +1,5 @@
 
-```
+
 # 🐳 My Docker Space  
 **Author:** [Panchikagupta05](https://github.com/Panchikagupta05)
 **Description:** A collection of Docker-based projects and experiments demonstrating containerization concepts, machine learning deployments, database integrations, networking, and cloud operations.
@@ -10,7 +10,7 @@
 
 This repository serves as a structured archive of Docker experiments and application prototypes. Each folder represents a standalone project that highlights specific use cases in software development, DevOps, and cloud-native deployment.
 
----
+
 
 ## 🧪 Experiments & Projects
 
